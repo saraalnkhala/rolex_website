@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  --oragrn: #ffb566;
+  --black: #262626;
+  --gray: #bfbfbf;
+  --gray-light: #fcfcfc;
+  --white: #fff;
+}
+.dark {
+  --oragrn: #ffb566;
+  --gray: #bfbfbf;
+  --gray-light: #333;
+  --black: #fff;
+  --white: #262626;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--gray-light);
+  color: var(--black);
+}
+a {
+  color: inherit !important;
+  text-decoration: none;
+}
+.headerScoll {
+  background-color: var(--gray-light);
+  box-shadow: 0 0 10px 0px var(--gray);
+}
+
+
+/* end gloab */
+
+/* header section  */
+header .navbar button i {
+  font-weight: 900 !important;
+  font-size: 1.3rem;
+}
+header nav .nav-link {
+  color: var(--black);
+  font-weight: 500 !important;
+}
+header .navbar-nav .nav-link.active {
+  color: var(--oragrn);
+}
+header .actions-icons i {
+  font-weight: 900 !important;
+  font-size: 1.3rem;
+  text-shadow: 0 0 1px var(--black);
+}
+/* end header section  */
+
+/* main section */
+main {
+  min-height: 100vh;
+}
+main .imgbox {
+  min-height: 100vh;
+  background-color: var(--oragrn);
+  text-align: center;
+  line-height: 100vh;
+}
+main .imgbox img {
+  height: 500px;
+  width: 350px;
+}
+main .scoial-links {
+  transform: rotate(-90deg) translateX(50%);
+  transform-origin: left;
+  position: absolute;
+  left: 5%;
+  top: 100%;
+  display: flex;
+  gap: 20px;
+}
+main .scoial-links a:hover {
+  color: var(--oragrn);
+}
+main .content p {
+  /* color: var(--black) !important; */
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: 300;
+}
+main .content .price {
+  color: var(--oragrn);
+  font-size: 2rem;
+}
+main .content .btns > button {
+  border: none;
+  background-color: var(--gray);
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+}
+main .content .btns > button:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 10px 0px var(--gray);
+}
+main .content .btns > button.big {
+  border: none;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.8rem 1.5rem;
+  text-transform: uppercase;
+}
+/* end main section */
+.ouer h6{
+  text-align: left;
+  position: relative;
+}
+
+
+.ouer h6::after{
+  content:"";
+  width: 5%;
+  height: 3px;
+  background-color: var(--oragrn);
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 2%;
+  transform: translate(-50% , 0);
+
+
+}
+main .imgboxs {
+  height: 350px;
+  background-color: var(--oragrn);
+  text-align: center;
+  width: 350px;
+  line-height: -50vh;
+  position: relative;
+}
+main .imgboxs img {
+  height: 350px;
+  width: 350px;
+   position: absolute; 
+   top: -40px;
+   left: 40px;
+}
+.bb1 button{
+ 
+  border: none;
+  background-color: var(--gray);
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+}
+.bb1 button:hover{
+ 
+  opacity: 0.9;
+  box-shadow: 0 0 10px 0px var(--gray);}
+/* Featured section  */
+.featured h2 {
+  text-align: center;
+  position: relative;
+}
+.featured h2::after {
+  content: "";
+  width: 10%;
+  height: 3px;
+  background-color: var(--oragrn);
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.featured .card {
+  transition: 0.5s;
+  background-color: var(--white) !important;
+
+}
+.featured .card:hover {
+  box-shadow: 0 0 20px 0px var(--gray);
+}
+.featured .card button {
+  opacity: 0;
+  transition: 0.5s;
+}
+.featured .card:hover button {
+  opacity: 1;
+  transform: translateY(20px);
+  margin-bottom: 30px;
+}
+.featured .card {
+  position: relative;
+}
+.featured .catg {
+  background-color: var(--oragrn);
+  color: var(--white);
+  padding: 5px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg) translate(-100%, 50%);
+  transform-origin: left;
+  text-transform: uppercase;
+}
+.featured .carousel .carousel-control-prev {
+  left: -10% !important;
+}
+.featured .carousel .carousel-control-prev-icon {
+  background-color: #000;
+}
+.featured .carousel .carousel-control-next {
+  right: -10% !important;
+}
+.featured .carousel .carousel-control-next-icon {
+  background-color: #000;
+  color: var(--oragrn) !important;
+}
+/* end Featured section  */
+
+/* start product section  */
+    /* prouducts */
+
+    .prouducts h2{
+      text-align: center;
+      position: relative;
+    }
+    .prouducts h2::after{
+      content:"";
+      width: 10%;
+      height: 3px;
+      background-color: var(--oragrn);
+      display: block;
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translate(-50% , 0);
+    
+    }
+    
+    .prouducts .card{
+    transition: 0.5s;
+    
+    }
+    .prouducts .card:hover{
+     box-shadow: 0 0 20px 0px var(--gray);
+    
+    }
+    .prouducts .card button{
+      opacity: 0;
+      transition: 0.5s;
+    
+    }
+    .prouducts .card:hover button{
+      opacity: 1;
+      transform: translateY(20px);
+      margin-bottom: 30px;
+    }
+    .prouducts .card{
+    position: relative;
+    
+    }
+    .prouducts .catg{
+    background-color: var(--oragrn);
+    color: var(--white);
+    padding: 5px 10px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+   
+    transform-origin: right;
+    text-transform: uppercase;
+    
+    }
+    .prouducts h6 {
+      color: var(--oragrn);
+  } 
+/* end product section  */
+
+/* start testimonial section  */
+.testimonial .right .imgbox{
+  width: 400px;
+  height: 500px;
+  background-color: var(--oragrn);
+  
+  }
+  .testimonial .right .imgbox img{
+    width: 100%;
+    height: 100%;
+  position: absolute;
+  top: 10%;
+  left: -10%;
+    object-fit: cover;
+    }
+    .testimonial .content{
+  padding: 20px;
+      }
+      .testimonial .content .icon-box{
+        width: 40px;
+        height: 40px;
+        background-color: var(--white);
+        color: var(--oragrn);
+        box-shadow: 0 0 5px 0 var(--black );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+            }
+            .testimonial .left .imgbox{
+         height: 80px;
+         width: 80px;
+         background-color: #262626;
+         overflow: hidden;
+         border-radius: 50%;
+                  }
+                  .testimonial .left .imgbox img{
+    height: 100%;
+   width: 100%;  
+  object-fit: cover;
+  }
+  .testimonial .left .carousel-control-prev-icon{
+  background-color: #040404;
+  top: 120%;
+  position: absolute;
+  }
+  .testimonial .left .carousel-control-next-icon{
+    background-color: #040404;
+    top: 120%;
+    position: absolute;
+  
+    }
+    .testimonial .left .carousel-control-next-icon{
+    
+      right: 560%;
+      }
+      .bi-arrow-right{
+        color: var(--oragrn);
+        font-size: 1rem;
+        height: 20px;
+        width: 20px;
+   background-color:var(--gray-light);
+   box-shadow: 0 0 5px var(--black);
+  right: 560%;
+  top: 120%;
+      }
+      .bi-arrow-left{
+        color: var(--oragrn);
+        font-size: 1rem;
+        height: 20px;
+        box-shadow: 0 0 5px var(--black);
+        width: 20px;
+   background-color:var(--gray-light);
+        top: 120%;
+   
+            }
+/* end testimonial section  */
+
+.ARRIVALS h2{
+  text-align: center;
+  position: relative;
+}
+.ARRIVALS h2::after{
+  content:"";
+  width: 10%;
+  height: 3px;
+  background-color: var(--oragrn);
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50% , 0);
+
+}
+
+.ARRIVALS .card{
+transition: 0.5s;
+
+}
+.ARRIVALS .card:hover{
+ box-shadow: 0 0 20px 0px var(--gray);
+
+}
+.ARRIVALS .card button{
+  opacity: 0;
+  transition: 0.5s;
+
+}
+.ARRIVALS .card:hover button{
+  opacity: 1;
+  transform: translateY(20px);
+  margin-bottom: 30px;
+}
+.ARRIVALS .card{
+position: relative;
+
+}
+.ARRIVALS .catg{
+background-color: var(--oragrn);
+color: var(--white);
+padding: 5px 10px;
+position: absolute;
+top: 15px;
+right: 10px;
+
+transform-origin: right;
+text-transform: uppercase;
+
+}
+.ARRIVALS h6 {
+  color: var(--oragrn);
+  margin: 10%;
+} 
+.Newsletter{
+background-color: var(--oragrn);
+}
+
+.inpem{
+padding: 5px;
+
+}
+.butem{
+padding: 5px;
+color: var(--white);
+background-color: var(--black);
+
+margin:0 -10px;
+
+
+}
+.aa1 {
+  font-size: 20px;
+  font-weight: bold;
+}
